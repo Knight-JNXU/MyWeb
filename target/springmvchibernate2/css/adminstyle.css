@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+.button {
+	margin-top: 20px;
+	padding: 5px;
+}
+
+.meslist {
+	text-align: center;
+	table-layout: fixed; 
+}
+
+td{
+	width:200px;
+	word-break:break-all;
+	text-align:center;
+}
+/* td {
+	width:200px;
+	text-align: center;
+	text-overflow:ellipsis; white-space:nowrap; overflow:hidden;
+} */
