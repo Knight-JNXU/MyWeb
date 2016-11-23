@@ -41,8 +41,8 @@
                     <li><a class="scroll" href="#skills">专业技能</a></li>
                     <li><a class="scroll" href="#port">个人经历</a></li>
                     <li><a class="scroll" href="#contact">留言</a></li>
-                    <li><a href=getProjectUrl()+"/user/admin">管理员</a></li>
-                    <li><a href="<%=path %>/joke/list">开心一刻</a></li>
+                    <li><a href="/user/admin">管理员</a></li>
+                    <li><a href="/joke/list">开心一刻</a></li>
                 </ul>
             </div>
             <!------Navigation ends-------->
@@ -59,7 +59,7 @@
                     <img src="images/diamond.png">
                 </div>
                 <div class="bannerhead">
-                    <h2>My name is <span>刘文</span></h2>
+                    <h2>My name is <span>Liu Wen</span></h2>
                     <h3>Programming Enthusiasts</h3>
                     <a class="downarrow scroll" href="#about"><span> </span></a>
                 </div>
@@ -83,20 +83,20 @@
             <div class="years">
                 <h4><b>基本信息</b></h4>
                 <span><h4>Basic Information</h4></span>
-                <p>刘文，男，天蝎座，1994年生于江西赣州，现在就读于江西师范大学</p>
+                <p>Liu Wen，男，天蝎座，1994年生于江西赣州，2013~2017就读于江西师范大学，现在在一家互联网公司实习</p>
             </div>
 
             <div class="years">
                 <h4><b>求职意向</b></h4>
                 <span><h4>Career Objective</h4></span>
-                <p>Java工程师、Java Web工程师</p>
+                <p>Java工程师</p>
             </div>
 
             <div class="years">
                 <h4><b>自我评价</b></h4>
                 <span><h4>Self-evaluation</h4></span>
-                <p>自学能力较强，曾自学过C++、Java、OpenGL、Unity3D等</p>
-                <p>有实战经验，2016年3-5月参与南昌城市配送系统Web端的开发</p>
+                <p>自学能力较强，曾自学过C++、Android、OpenGL、Unity3D等</p>
+                <p>有一定的java-web开发经验</p>
                 <p>有团队协作经验，合作团队意识较强</p>
                 <p>热爱学习，积极参加学科竞赛和社会实践</p>
             </div>
@@ -182,19 +182,19 @@
     <div class="container">
         <div class="portfolio-grids">
             <div class="portfolio-grid col-md-4">
-                <a href="#"><img src="images/monitr1.png"></a>
-                <p>南昌电信Android开发培训</p>
-                <a class="rightarrow" href="#"><span> </span></a>
-            </div>
-            <div class="portfolio-grid col-md-4">
-                <a href="<%=path %>/WEB-INF/view/honour/icm.html"><img src="images/monitr2.png"></a>
+                <a href='/html/icmhonor.html'><img src="images/monitr2.png"></a>
                 <p>参加 ICM，荣获 Honorable Mention 奖</p>
-                <a class="rightarrow" href="#"><span> </span></a>
+                <a class="rightarrow" href="/html/icmhonor.html"><span> </span></a>
             </div>
             <div class="portfolio-grid col-md-4">
-                <a href="http://tp.56tg.cn/"><img src="images/monitr3.png"></a>
-                <p>南昌城市配送系统 Web端</p>
-                <a class="rightarrow" href="#"><span> </span></a>
+                <a href="http://www.56tp.cn/"><img src="images/monitr3.png"></a>
+                <p>南昌城市配送系统 java-web 后台开发</p>
+                <a class="rightarrow" href="http://www.56tp.cn/"><span> </span></a>
+            </div>
+            <div class="portfolio-grid col-md-4">
+                <a href="/html/internship.html"><img src="images/monitr1.png"></a>
+                <p>实习，2016/7~至今</p>
+                <a class="rightarrow" href="/html/internship.html"><span> </span></a>
             </div>
             <div class="clear"> </div>
         </div>
@@ -231,7 +231,7 @@
             <div class="col-md-6">
                 <div class="footer-right">
                     <div class="form">
-                        <form action="<%=path %>/message/add" method="post" onsubmit="return onSubmitCheck()">
+                        <form action="/message/add" method="post" onsubmit="return onSubmitCheck()">
                             <input type="text" class="text" name="name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
                             <input type="text" class="text" id="eMail" name="email" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}">
                             <textarea rows="2" cols="70" id="message" name="mes" onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
