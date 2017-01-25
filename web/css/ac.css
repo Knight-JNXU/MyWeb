@@ -1,0 +1,21 @@
+.ac{
+    font-size: 30px;
+    text-align: center;
+    border: double;
+    letter-spacing: 20px;
+}
+.acup{
+
+}
+.acdown{
+    padding-left: 15px;
+    margin-top: 50px;
+    width: 50px;
+    word-wrap: break-word;
+    line-height: 50px;
+}
+.acleft{
+    float: left;
+}.acright{
+    float: right;
+}
