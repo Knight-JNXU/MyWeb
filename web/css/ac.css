@@ -55,6 +55,7 @@ body{
     *zoom:1;
     background-image: url("../fimg/midup.png");
     background-position-y: -20px;
+    cursor: pointer;
 }
 .acdown{
     width: 50px;
