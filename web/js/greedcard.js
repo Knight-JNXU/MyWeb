@@ -2074,7 +2074,8 @@ var OneBook3D = {
 		
 		this.$gContainter.css({
 				width:this.CFG.BOOK_SIZE.width,
-				height:this.CFG.BOOK_SIZE.height*this.CFG.ROTATE_CENTER_OFFSET,border:'0px solid gold'
+				height:this.CFG.BOOK_SIZE.height*this.CFG.ROTATE_CENTER_OFFSET,border:'0px solid gold',
+				cursor: 'pointer'
 				});
 		
 		this.calculateSheets();

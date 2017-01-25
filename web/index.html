@@ -11,13 +11,31 @@
     <script type="text/javascript" src="./js/three.min.js"></script>
     <script type="text/javascript" src="js/greedcard.js"></script>
     <link type="text/css" href="css/ac.css" rel="stylesheet" media="screen" />
+    <script language="javascript">
+        function openWin(url) {
+            var name='add';                            //网页名称，可为空;
+            var iWidth=720;                          //弹出窗口的宽度;
+            var iHeight=600;                         //弹出窗口的高度;
+            //获得窗口的垂直位置
+            var iTop = (window.screen.availHeight - 30 - iHeight) / 2;
+            //获得窗口的水平位置
+            var iLeft = (window.screen.availWidth - 10 - iWidth) / 2;
+            window.open(url, name, 'height=' + iHeight + ',,innerHeight=' + iHeight + ',width=' + iWidth + ',innerWidth=' + iWidth + ',top=' + iTop + ',left=' + iLeft + ',status=no,toolbar=no,menubar=no,location=no,resizable=no,scrollbars=0,titlebar=no');
+            // window.open("AddScfj.aspx", "newWindows", 'height=100,width=400,top=0,left=0,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no');
+        }
+    </script>
 </head>
 <body>
 <div id="allCont">
+    <!--<bgsound src="./bgm/bgm.mp3" loop="-1"></bgsound>-->
+    <!--<EMBED src="./bgm/bgm.mp3" autostart="true" loop="true" hidden="true">-->
+    <audio src="./bgm/bgm.mp3" id="audio1" hidden="true" autoplay="true" loop="true"></audio>
     <div id="up" class="up">
-        <table style="margin:auto;border-collapse:collapse;border:0;cellpadding:0;cellspacing:0;">
+        <table class="tablestyle">
             <td class="frontac"></td>
-            <td class="ac acup" onclick="window.location='../CSDNSearch/htmls/about.html'">1010</td>
+            <!--<td class="ac acup" onclick="window.location='../CSDNSearch/htmls/about.html'">1010</td>-->
+            <!--<td class="ac acup" onclick="window.open('bgm.html','info','width=270,height=300')">1010</td>-->
+            <td class="ac acup" onclick="openWin('../CSDNSearch/htmls/about.html')">1010</td>
             <td class="backac"></td>
         </table>
     </div>
