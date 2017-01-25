@@ -1,18 +1,36 @@
+.allleft{
+    /*overflow: hidden;*/
+    /*zoom: 1;*/
+}
+.downhead{
+    background-image: url("../fimg/up.png");
+}
 .ac{
     font-size: 30px;
     text-align: center;
     border: double;
+    border-color: darkred;
     letter-spacing: 20px;
 }
 .acup{
-
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+    margin-left: 40%;
+    background-image: url("../fimg/midup.png");
+    background-position-y: -20px;
 }
 .acdown{
-    padding-left: 15px;
+    padding-left: 20px;
     margin-top: 50px;
     width: 50px;
     word-wrap: break-word;
-    line-height: 50px;
+    line-height: 30px;
+    background-image: url("../fimg/mid.png");
+    background-position-x: -15px;
 }
 .acleft{
     float: left;
