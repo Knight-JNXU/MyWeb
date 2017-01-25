@@ -12,28 +12,35 @@
     <link type="text/css" href="css/ac.css" rel="stylesheet" media="screen" />
 </head>
 <body>
+<input type="submit" class="aboutbutton" value="ABOUT" onclick="window.location='../CSDNSearch/htmls/about.html'">
 <div id="allCont">
-    <div id="up">
-        <div id="acup" class="ac acup">1010</div>
+    <div id="up" class="up">
+        <table style="margin:auto;border-collapse:collapse;border:0;cellpadding:0;cellspacing:0;">
+            <td class="frontac"></td>
+            <td class="ac acup">1010</td>
+            <td class="backac"></td>
+        </table>
     </div>
     <div class="allleft">
         <div class="downhead"></div>
-        <div id="acleft" class="ac acleft acdown">1011001010101101</div>
+        <div id="acleft" class="ac acleft acdown">101100101010</div>
+        <div class="downtail"></div>
     </div>
-    <div id="acright"class="ac acright acdown">0100110101010010</div>
+    <div class="allright">
+        <div class="downhead"></div>
+        <div id="acright"class="ac acright acdown">010011010101</div>
+        <div class="downtail"></div>
+    </div>
     <div id="photobook"></div>
 </div>
 <script type="text/javascript">
     $(function(){
-
         var src1 = [
             'fimg/page1.png',
             'fimg/page2.png', 'fimg/page3.png',
             'fimg/page1.png'
         ];
-
         $('#photobook').greedcard(src1,{skin:['light','dark'], bgDark:'#56998c url(./i/bg.jpg)',bgLight:'#d97f6f url(./i/bg2.jpg)', border:0, cesh:false});
-
     });
 </script>
 </body>

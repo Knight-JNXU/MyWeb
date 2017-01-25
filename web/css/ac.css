@@ -1,9 +1,30 @@
+body{
+    background-color: #F6F6F6;
+    position: relative;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 .allleft{
-    /*overflow: hidden;*/
-    /*zoom: 1;*/
+    width: 100px;
+    float: left;
+    margin-top: -55px;
+}
+.allright{
+    width: 100px;
+    float: right;
+    margin-top: -55px;
 }
 .downhead{
+    width: 100px;
+    height: 120px;
     background-image: url("../fimg/up.png");
+}
+.downtail{
+    float: left;
+    width: 100px;
+    height: 120px;
+    background-image: url("../fimg/down.png");
 }
 .ac{
     font-size: 30px;
@@ -12,20 +33,30 @@
     border-color: darkred;
     letter-spacing: 20px;
 }
+.up{
+
+}
+.frontac{
+    width: 16px;
+    height: 90px;
+    background-image: url("../fimg/left.png");
+}
+.backac{
+    width: 16px;
+    background-image: url("../fimg/right.png");
+}
 .acup{
+    margin-top: 15px;
     padding-left: 20px;
     padding-top: 12px;
     padding-bottom: 12px;
     display:inline-block;
     *display:inline;
     *zoom:1;
-    margin-left: 40%;
     background-image: url("../fimg/midup.png");
     background-position-y: -20px;
 }
 .acdown{
-    padding-left: 20px;
-    margin-top: 50px;
     width: 50px;
     word-wrap: break-word;
     line-height: 30px;
@@ -33,7 +64,32 @@
     background-position-x: -15px;
 }
 .acleft{
+    padding-left: 19px;
+    margin-left: 11px;
     float: left;
 }.acright{
+     padding-left: 19px;
+     margin-right: 12px;
     float: right;
+}
+
+.aboutbutton{
+    background-color: rgb(26, 188, 156);
+    color: #ffffff;float: right;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 8.3px 16px;
+    border-radius: 3px;
+    border: 0 !important;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
 }
