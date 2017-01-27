@@ -11,24 +11,16 @@
     <script type="text/javascript" src="./js/three.min.js"></script>
     <script type="text/javascript" src="js/greedcard.js"></script>
     <link type="text/css" href="css/ac.css" rel="stylesheet" media="screen" />
-    <script language="javascript">
-        function openWin(url) {
-            var name='add';                            //网页名称，可为空;
-            var iWidth=720;                          //弹出窗口的宽度;
-            var iHeight=600;                         //弹出窗口的高度;
-            //获得窗口的垂直位置
-            var iTop = (window.screen.availHeight - 30 - iHeight) / 2;
-            //获得窗口的水平位置
-            var iLeft = (window.screen.availWidth - 10 - iWidth) / 2;
-            window.open(url, name, 'height=' + iHeight + ',,innerHeight=' + iHeight + ',width=' + iWidth + ',innerWidth=' + iWidth + ',top=' + iTop + ',left=' + iLeft + ',status=no,toolbar=no,menubar=no,location=no,resizable=no,scrollbars=0,titlebar=no');
-            // window.open("AddScfj.aspx", "newWindows", 'height=100,width=400,top=0,left=0,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no');
-        }
-    </script>
 </head>
-<body>
-<div id="allCont">
+<body id="fbody" onload="$('#greetcard').greedcard([
+            'fimg/page1.png',
+            'fimg/page2.png', 'fimg/page3.png',
+            'fimg/page1.png'
+        ],{skin:['light','dark'], bgDark:'#56998c url(./i/bg.jpg)',bgLight:'#d97f6f url(./i/bg2.jpg)', border:0, cesh:false});">
+<div id="allCont" class="allContStyle">
     <!--<bgsound src="./bgm/bgm.mp3" loop="-1"></bgsound>-->
     <!--<EMBED src="./bgm/bgm.mp3" autostart="true" loop="true" hidden="true">-->
+    <!--<iframe name="content_frame" marginwidth=0 marginheight=0 width=100% height=30 src="bgmpage.html" frameborder=0></iframe>-->
     <audio src="./bgm/bgm.mp3" id="audio1" hidden="true" autoplay="true" loop="true"></audio>
     <div id="up" class="up">
         <table class="tablestyle">
@@ -49,17 +41,19 @@
         <div id="acright"class="ac acright acdown">010011010101</div>
         <div class="downtail"></div>
     </div>
-    <div id="photobook"></div>
+    <div id="greetcard"></div>
 </div>
 <script type="text/javascript">
+//    $('#greetcard').delay(800);
+//    alert("hello");
     $(function(){
         var src1 = [
             'fimg/page1.png',
             'fimg/page2.png', 'fimg/page3.png',
             'fimg/page1.png'
         ];
-        $('#photobook').greedcard(src1,{skin:['light','dark'], bgDark:'#56998c url(./i/bg.jpg)',bgLight:'#d97f6f url(./i/bg2.jpg)', border:0, cesh:false});
     });
+//$('#greetcard').greedcard(src1,{skin:['light','dark'], bgDark:'#56998c url(./i/bg.jpg)',bgLight:'#d97f6f url(./i/bg2.jpg)', border:0, cesh:false});
 </script>
 </body>
 </html>
